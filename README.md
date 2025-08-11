@@ -23,7 +23,7 @@ This project detects whether a person is wearing a face mask in live video strea
 ---
 
 ## 📂 Project Structure
-## 📊 Dataset
+##  Dataset
 The model was trained using:
 - **With Mask** and **Without Mask** images.
 - Data augmentation techniques to improve generalization.
@@ -34,9 +34,30 @@ You can download similar datasets from:
 
 ---
 
-## 🚀 Installation
+##  Installation
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/balajisrinivas/Face-Mask-Detection.git
+   git clone https://github.com/Gnanavip/Face-mask-detection
    cd Face-Mask-Detection
+   ```
+   ---
+2. **Install Dependencies**
+   ```bash
+    pip install -r requirements.txt
+   ```
+
+   ---
+
+ 3. **Run detection**
+    ```bash
+    python detect_mask_image.py --image examples/example_01.png
+    python detect_mask_video.py
+    ```
+    ---
+
+4. **Model Training**
+   ```bash
+   python train_mask_detector.py --dataset dataset
+   ```
+
 
